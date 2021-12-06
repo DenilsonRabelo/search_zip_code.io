@@ -8,7 +8,8 @@ window.onload=function(){
         }
     }
     const cep = document.querySelector("#cep")
-    cep.addEventListener("blur", (e) =>{
+    const btn = document.querySelector("#btn-ps")
+    btn.addEventListener("click", (e) =>{
         const load = {
             method : 'GET',
             mode : 'cors',
