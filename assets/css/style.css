@@ -16,10 +16,5 @@ body {
     padding: 0;
     margin: 0;
     background-color: bisque;
-
-    height: 20em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
