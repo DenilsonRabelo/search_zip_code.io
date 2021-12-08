@@ -17,10 +17,12 @@ body {
     margin: 0;
     background-color: bisque;
 
-    height: 20em;
+    height: 20em;font-family:Arial;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family:Arial;
+    
 }
 
 .form-group{
