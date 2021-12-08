@@ -28,3 +28,7 @@ body {
 .form-group{
     padding: 5px;
 }                
+
+button{
+    background-color: green;
+}
