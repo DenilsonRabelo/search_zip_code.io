@@ -13,7 +13,7 @@ html, body {
     min-height: 100%;
 }
 body {
-    padding: 0;
+    padding:30px;
     margin: 0;
     background-color: bisque;
 
@@ -23,3 +23,6 @@ body {
     justify-content: center;
 }
 
+.form-group{
+    padding: 5px;
+}                
