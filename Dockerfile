@@ -1,3 +1,3 @@
 FROM nginx:alpine
-MAINTAINER Elliton Dias 
+MAINTAINER Elliton_Dias 
 COPY index.html /usr/share/nginx/html
