@@ -11,19 +11,28 @@ pipeline {
       steps {
         echo 'deu certo'
         sleep 20
-        build(job: 'main', propagate: true)
+        build(job: 'unicorn-test', propagate: true)
       }
     }
 
     stage('deploy') {
       when {
-        branch 'develop'
+        branch 'main'
       }
       steps {
-        input 'Espera pela confirmação'
+        input 'Espera pela confirmaÃ§Ã£o'
         echo 'iniciando deploy'
       }
     }
 
+    stage('') {
+      steps {
+        mail(body: 'codigo testado', subject: 'deucerto', to: 'rabelo.denilson.denilson@gmail.com')
+      }
+    }
+
+  }
+  triggers {
+    pollSCM('30 15 * * *')
   }
 }
