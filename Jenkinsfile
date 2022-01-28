@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('sleep') {
+    stage('teste') {
       steps {
         echo 'iniciando teste'
         sleep 5
