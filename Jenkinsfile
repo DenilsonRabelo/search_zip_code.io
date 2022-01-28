@@ -9,7 +9,8 @@ pipeline {
 
     stage('sleep') {
       steps {
-        echo 'deu certo'
+        echo 'iniciando teste'
+        sleep 5
       }
     }
 
