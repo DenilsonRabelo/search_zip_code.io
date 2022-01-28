@@ -10,7 +10,6 @@ pipeline {
     stage('sleep') {
       steps {
         echo 'deu certo'
-        build 'unicorn-test'
       }
     }
 
