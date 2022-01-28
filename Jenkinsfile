@@ -25,7 +25,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('email') {
       steps {
         mail(body: 'codigo testado', subject: 'deucerto', to: 'rabelo.denilson.denilson@gmail.com')
       }
