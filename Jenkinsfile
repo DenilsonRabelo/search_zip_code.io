@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('sleep') {
+      steps {
+        echo 'deu certo'
+        sleep 20
+      }
+    }
+
   }
 }
