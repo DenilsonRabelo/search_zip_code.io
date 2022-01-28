@@ -15,5 +15,15 @@ pipeline {
       }
     }
 
+    stage('deploy') {
+      when {
+        branch 'develop'
+      }
+      steps {
+        input 'Espera pela confirmação'
+        echo 'iniciando deploy'
+      }
+    }
+
   }
 }
