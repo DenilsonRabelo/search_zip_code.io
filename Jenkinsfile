@@ -25,6 +25,12 @@ pipeline {
       }
     }
 
+    stage('email') {
+      steps {
+        mail(subject: 'teste', body: 'deu certo', to: 'rabelo.denilson.denilson@gmail.com')
+      }
+    }
+
   }
   triggers {
     pollSCM('30 15 * * *')
