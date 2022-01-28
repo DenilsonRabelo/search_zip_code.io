@@ -11,11 +11,11 @@ pipeline {
       steps {
         echo 'deu certo'
         sleep 20
-        build 'unicorn-test'
+        build(job: 'unicorn-test', propagate: true)
       }
     }
 
-    stage('deploy') {
+    stage('Deploy') {
       when {
         branch 'main'
       }
