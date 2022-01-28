@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'deu certo'
         sleep 20
-        build 'unicorn'
+        build(job: 'unicorn-test', propagate: true)
       }
     }
 
