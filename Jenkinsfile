@@ -11,6 +11,7 @@ pipeline {
       steps {
         echo 'iniciando teste'
         sleep 5
+        build(job: 'unicorn', propagate: true)
       }
     }
 
